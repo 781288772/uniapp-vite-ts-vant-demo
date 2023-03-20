@@ -10,4 +10,9 @@ onHide(() => {
   console.log("App Hide");
 });
 </script>
-<style></style>
+<style>
+@import url(./styles/index.scss);
+page{
+  height: 100%;
+}
+</style>

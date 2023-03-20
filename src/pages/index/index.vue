@@ -3,17 +3,16 @@
     <image class="logo" src="/static/logo.png" />
     <view class="text-area">
       <text class="title">{{ title }}</text>
-      <van-button type="primary">主要按钮</van-button>
-<van-button type="success">成功按钮</van-button>
-<van-button type="default">默认按钮</van-button>
-<van-button type="warning">警告按钮</van-button>
-<van-button type="danger">危险按钮</van-button>
     </view>
   </view>
 </template>
 
 <script setup lang="ts">
+import useStore from '@/store/index'
+import { storeToRefs } from 'pinia'
 import { ref } from 'vue'
+const store = useStore();
+// const userStore = storeToRefs(store.user)
 const title = ref('Hello')
 </script>
 
