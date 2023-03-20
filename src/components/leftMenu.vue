@@ -4,7 +4,12 @@
       <div class="logo" @click="unfold">
         <img src="../static/icon／48px／user@2x.png" />
       </div>
-      <div v-for="i in 5" :class="[data.menuIndex==i?'active':'']"  :key="i" class="font" @click="selectMenu(i)">A{{ i }}</div>
+      <!-- <div v-for="i in 20" :class="[data.menuIndex==i?'active':'']"  :key="i" class="font" @click="selectMenu(i)">A{{ i }}</div> -->
+      <scroll-view scroll-y="true" style="height:800px" >
+        <div class="flex-d flex-center align-center">
+            <div v-for="i in 20" :class="[data.menuIndex==i?'active':'']"  :key="i" class="font" @click="selectMenu(i)">A{{ i }}</div>
+        </div>
+      </scroll-view>
     </div>
   </div>
   <div class="menu1" style="width: 185upx" v-show="data.isUnfold">
@@ -13,7 +18,11 @@
         <img src="@/static/icon／48px／user@2x.png" />
         <img src="@/static/icon／48px／close@2x.png" alt="" />
       </div>
-      <div v-for="i in 5" :class="[data.menuIndex==i?'active':'']"  :key="i" class="font1" @click="selectMenu(i)">A{{i}}</div>
+      <scroll-view scroll-y="true" style="height:800px" >
+        <div class="flex-d flex-center align-center">
+            <div v-for="i in 20" :class="[data.menuIndex==i?'active':'']"  :key="i" class="font1" @click="selectMenu(i)">A{{ i }}</div>
+        </div>
+      </scroll-view>
     </div>
   </div>
 </template>
