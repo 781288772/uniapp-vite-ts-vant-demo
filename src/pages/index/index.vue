@@ -2,18 +2,37 @@
   <view class="content">
     <image class="logo" src="/static/logo.png" />
     <view class="text-area">
-      <text class="title">{{ title }}</text>
+      <text class="title">{{  userList.username}}</text>
     </view>
   </view>
 </template>
 
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import useStore from '@/store/index'
 import { storeToRefs } from 'pinia'
 import { ref } from 'vue'
 const store = useStore();
 // const userStore = storeToRefs(store.user)
 const title = ref('Hello')
+</script> -->
+<script>
+import {getUserList,login} from "@/apis/user"
+const {log} = console;
+
+export default{
+ data(){
+  return {
+    title:'vue2',
+    userList:[],
+  }
+ },
+ mounted(){
+  login().then(res=>{
+    log('res',res)
+    this.userList = res.result;
+  })
+ }
+}
 </script>
 
 <style>

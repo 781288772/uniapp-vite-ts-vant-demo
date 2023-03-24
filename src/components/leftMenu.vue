@@ -53,7 +53,7 @@ const selectMenu = (index:number)=>{
     margin-top: 20upx;
     padding: 5upx 20upx;
     line-height: 44upx;
-    font-size: 18px;
+    font-size: 18upx;
     font-family: PingFangSC-Medium, PingFang SC;
     font-weight: 500;
     color: #333333;
@@ -85,7 +85,7 @@ const selectMenu = (index:number)=>{
     margin-top: 30upx;
     text-align: center;
     line-height: 44upx;
-    font-size: 18px;
+    font-size: 18upx;
     font-family: PingFangSC-Medium, PingFang SC;
     font-weight: 500;
     color: #333333;

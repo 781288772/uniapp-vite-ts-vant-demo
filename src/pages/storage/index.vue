@@ -28,22 +28,14 @@
             </div>
               </template>
         </van-search>
-        <!-- <van-field
-            v-model="data.keyword"
-            label=""
-            
-            placeholder="请输入关键字搜索"
-          >
-         <template #left-icon>
-            <img style="width:20upx;height:20upx" src="../../static/icon／24px／search@2x.png" alt="">
-         </template>
-         <template #right-icon>
-            <img style="width:24upx;height:24upx;border-left: 1px solid #ccc;padding-left: 10px;margin-top: 5upx;" src="../../static/shaoma@2x.png" alt="">
-         </template>
-        </van-field> -->
       </div>
       <div class="top-item">
-        <van-tabs
+        <div class="flex flex-between align-center">
+          <div>待完成（10）</div>
+          <div>已完成</div>
+        </div>
+        <!-- <van-tabs
+        class="top-item"
           v-model:active="data.active"
           type="card"
           background="#fff"
@@ -60,9 +52,9 @@
             title-style="line-height:40px;height:40px"
             title="已完成"
           ></van-tab>
-        </van-tabs>
+        </van-tabs> -->
       </div>
-      <div class="flex flex-center align-center top-item">
+      <div class="flex flex-center align-center top-item" style="padding:10upx;box-sizing: border-box;">
         <div>前一天</div>
         <div>3月8日</div>
         <div>后一天</div>
@@ -96,6 +88,9 @@ const onClickLeft = () => {};
     width: 100% !important;
     height: 40px !important;
     margin: 0;
+    overflow: hidden;
+    background: #EE780C;
+    border: 1px solid #EE780C;
     .van-tab {
       padding: 0 20px;
       &:last-child {
@@ -121,6 +116,7 @@ const onClickLeft = () => {};
       margin: 10px;
       overflow: hidden;
       background: #fff;
+      width:33%;
       /** line-height: 40upx;
             height: 40upx;**/
     }
