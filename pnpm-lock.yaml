@@ -23,6 +23,7 @@ specifiers:
   '@vue/tsconfig': ^0.1.3
   axios: ^1.3.4
   pinia: ^2.0.33
+  pinia-plugin-persistedstate: ^3.1.0
   sass: ^1.59.3
   typescript: ^4.9.4
   uniapp-axios-adapter: ^0.3.2
@@ -49,6 +50,7 @@ dependencies:
   '@types/node': registry.npmmirror.com/@types/node/18.15.3
   axios: registry.npmmirror.com/axios/1.3.4
   pinia: registry.npmmirror.com/pinia/2.0.33_hmuptsblhheur2tugfgucj7gc4
+  pinia-plugin-persistedstate: registry.npmmirror.com/pinia-plugin-persistedstate/3.1.0_pinia@2.0.33
   sass: registry.npmmirror.com/sass/1.59.3
   uniapp-axios-adapter: registry.npmmirror.com/uniapp-axios-adapter/0.3.2_axios@1.3.4
   vant: registry.npmmirror.com/vant/4.1.1_vue@3.2.47
@@ -4765,6 +4767,17 @@ packages:
     name: pify
     version: 2.3.0
     engines: {node: '>=0.10.0'}
+
+  registry.npmmirror.com/pinia-plugin-persistedstate/3.1.0_pinia@2.0.33:
+    resolution: {integrity: sha512-8UN+vYMEPBdgNLwceY08mi5olI0wkYaEb8b6hD6xW7SnBRuPydWHlEhZvUWgNb/ibuf4PvufpvtS+dmhYjJQOw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pinia-plugin-persistedstate/-/pinia-plugin-persistedstate-3.1.0.tgz}
+    id: registry.npmmirror.com/pinia-plugin-persistedstate/3.1.0
+    name: pinia-plugin-persistedstate
+    version: 3.1.0
+    peerDependencies:
+      pinia: ^2.0.0
+    dependencies:
+      pinia: registry.npmmirror.com/pinia/2.0.33_hmuptsblhheur2tugfgucj7gc4
+    dev: false
 
   registry.npmmirror.com/pinia/2.0.33_hmuptsblhheur2tugfgucj7gc4:
     resolution: {integrity: sha512-HOj1yVV2itw6rNIrR2f7+MirGNxhORjrULL8GWgRwXsGSvEqIQ+SE0MYt6cwtpegzCda3i+rVTZM+AM7CG+kRg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pinia/-/pinia-2.0.33.tgz}
