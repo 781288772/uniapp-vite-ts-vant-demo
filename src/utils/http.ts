@@ -16,14 +16,18 @@ request.interceptors.request.use((config:any) => {
 
 request.interceptors.response.use((response:any) => {
   // 统一处理响应,返回Promise以便链式调用
+  const { data } = response;
   if (response.status === 200) {
-    const { data } = response;
+   
     if (data && data.code === 200) {
       return Promise.resolve(data);
     } else {
       return Promise.reject(data);
     }
-  } else {
+  }else if(data.code==401){
+    console.log('登录未授权')
+  } 
+  else {
     return Promise.reject(response);
   }
 });

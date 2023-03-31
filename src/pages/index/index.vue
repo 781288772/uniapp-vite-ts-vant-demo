@@ -2,8 +2,10 @@
   <view class="content">
     <image class="logo" src="/static/logo.png" />
     <view class="text-area">
-      <text class="title">{{  userList.username}}</text>
+      <text class="title">登录用户：{{  userList.username}}</text>
+     
     </view>
+    <div style="width:50px">{{ JSON.stringify(userList) }}</div>
   </view>
 </template>
 
